@@ -1,15 +1,15 @@
+import dotenv from 'dotenv'
+dotenv.config({ silent: true });
 import express from 'express'
 import userRouter from './routes/user.route.js'
 import authRouter from './routes/auth.route.js'
 // const authRouter=require('./routes/auth.route.js')
 // const mongoose=require('mongoose')
 import mongoose from 'mongoose'
-import dotenv from 'dotenv'
 import cookieParser from 'cookie-parser';
 import listingRouter from './routes/listing.route.js';
 import path from 'path';
 
-dotenv.config({ path: '../.env' });
 const app=express()
 const PORT=3000
 
