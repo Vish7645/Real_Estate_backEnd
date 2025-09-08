@@ -14,7 +14,7 @@ import cors from 'cors';
 const app=express()
 
 app.use(cors({
-    origin: true,
+    origin: ["http://localhost:5173", "https://real-estate-frontend-murex.vercel.app"],
     credentials: true,
 }));
 
